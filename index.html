@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Coding Projects Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .project-header h2 {
+            margin-bottom: 10px;
+        }
+        
+        .project-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 2px;
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-content p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Projects Showcase</h1>
+            <p>Explore amazing coding projects built by talented students</p>
+        </header>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Todo App</h2>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">React</span>
+                </div>
+                <div class="project-content">
+                    <p>A fully functional todo application with local storage support, allowing users to create, edit, and delete tasks.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Weather App</h2>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">API</span>
+                </div>
+                <div class="project-content">
+                    <p>Fetches real-time weather data from an API and displays it with a beautiful UI. Includes 5-day forecast.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Portfolio Site</h2>
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                </div>
+                <div class="project-content">
+                    <p>A responsive personal portfolio website showcasing work, skills, and contact information with smooth animations.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Chat App</h2>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">Socket.io</span>
+                </div>
+                <div class="project-content">
+                    <p>Real-time chat application with user authentication, multiple rooms, and message history.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Game of Life</h2>
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">Graphics</span>
+                </div>
+                <div class="project-content">
+                    <p>Conway's Game of Life implementation with interactive controls to play, pause, and adjust simulation speed.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Budget Tracker</h2>
+                    <span class="project-tag">Vue.js</span>
+                    <span class="project-tag">Chart.js</span>
+                </div>
+                <div class="project-content">
+                    <p>Track expenses and income with visual charts. Features budget goals, category tracking, and data export.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Student Projects Showcase. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
